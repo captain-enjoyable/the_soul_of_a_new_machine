@@ -9,3 +9,10 @@ function cf() {
 function projects() {
   cd ~/Projects/$(find ~/Documents/projects -type d -maxdepth 2 -depth 1 | sed 's/\/Users\/mattheweddy\/Projects\///' | fzf -1 -q "$1")
 }
+
+# change the tab name to the current directory
+if [ $ITERM_SESSION_ID ]; then
+precmd() {
+  echo -ne "\033]0;${PWD##*/}\007"
+}
+fi
