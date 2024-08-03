@@ -1,0 +1,25 @@
+{
+    "atomKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": true,
+    "[ruby]": {
+        "editor.tabSize": 2,
+        "files.trimTrailingwhitespace": true,
+        "files.insertFinalNewline": true,
+    },
+    "window.zoomLevel": 1,
+    "editor.lineNumbers": "relative",
+    "vim.easymotion": true,
+    "vim.leader": " ",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "r"
+            ],
+            "commands": "copyRelativeFilePath"
+        }
+    ],
+    "vim.useSystemClipboard": true,
+    "vim.sneak": true
+}
